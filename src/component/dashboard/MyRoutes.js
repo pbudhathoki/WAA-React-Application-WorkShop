@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router";
 import Todo from "../todo/Todo";
 import Todos from "../todo/Todos";
 import User from "../user/User";
-import DetailTodo from "../todo/DetailTodo";
+import DetailTodo from "../todo/detailTodo";
 export default function MyRoutes(){
 
     return (
@@ -18,9 +18,9 @@ export default function MyRoutes(){
                     element={<User />}
                 />
                 <Route
-                 path="/detailToDo" 
+                 path="/detailToDo/:id" 
                  element={<DetailTodo />}
-                />
+                 />
             </Routes>
         </div>
     )

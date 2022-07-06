@@ -5,14 +5,14 @@ export default function Todo(props){
 
     const navigate = useNavigate();
 
-    const onClicked = (id) =>{
-        console.log(id);
-        navigate("/detailToDo/"+id);
-    }
-
-    return(
-        <div onClick={()=>{onClicked(props.id)}}>
-            <h3>{props.title}</h3>
-        </div>
-    )
+    const onClicked = (id) => {
+        console.log("onclicked function called:"+ id);
+        navigate("/detailToDo/" + id);
+      }
+  
+      return (
+          <div onClick={() => { onClicked(props.id) }}>
+              <h2>{props.title}</h2>
+          </div>
+      )
 }
